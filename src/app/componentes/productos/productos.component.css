@@ -1,0 +1,141 @@
+
+/* Ajustes del carrusel */
+#carouselExample {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+/* Estilo para las imágenes del carrusel */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 2); /* Sombra suave */
+}
+
+/* Estilo para el texto de los captions */
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Estilo para el título de los captions */
+.carousel-caption h5 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Estilo para el texto de los captions */
+.carousel-caption p {
+  color: #555;
+  font-size: 18px;
+}
+
+/* Estilo para los controles de navegación */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+/* Estilo para las flechas de los controles de navegación */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #1815ca;
+  border-radius: 50%;
+}
+
+/* Estilo para los botones de los controles de navegación */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Estilo para los cards */
+.card {
+  width: 200px;
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  /* Agregamos posición relativa */
+}
+
+/* Efecto de aumento al pasar el ratón sobre los cards */
+.card:hover {
+  transform: scale(1.2);
+}
+
+/* Estilo para las imágenes de los cards */
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Estilo para el título de los cards */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Estilo para el texto de los cards */
+.card-text {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Estilo para el footer de los cards */
+.card-footer {
+  background-color: #e7f069;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Estilo para el precio en el footer */
+.card-footer small {
+  color: #333;
+  font-size: 14px;
+}
+
+/* Estilo para el deck de cards */
+.card-deck {
+  text-align: center;
+}
+
+/* Estilo para el botón de añadir al carrito */
+.add-to-cart-btn {
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #c8d457e1;
+  color: #101011bb;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Inicialmente oculto */
+}
+
+/* Estilo para el botón de añadir al carrito al pasar el ratón sobre la tarjeta */
+.card:hover .add-to-cart-btn {
+  display: block;
+}
+
