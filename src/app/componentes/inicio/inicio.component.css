@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Groening';
+    src: url(../../../assets/Groening/groening_plain.ttf);
+}
+
+.carousel-inner{
+    margin: 2% 20%; /*Los margenes de top y bottom tienen un margen del 2% y los margenes de derecha e izquierda tienen un margen del 20%*/
+    width: 60%;
+    height: 490px;
+}
+ol{
+    list-style: none; /*La lista del carousel se le quita la lista de tipo númerica*/
+}
+
+h2{
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*font-family: 'Groening';
+    color: #FEE50E;*/
+}
+
+
+/****************.card*****************/
+.card {
+    border-radius: 4px;
+    margin: 20px;
+    margin-bottom: 70px;
+    width: 700px;
+    height: 350px;
+    display: flex;
+    flex-direction: row; /* Cambia el flujo de elementos a horizontal */
+  }
+  
+.image-container {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container:hover {
+    flex: 2;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: transform .5s;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.0); /* Modificamos la escala al hacer hover */
+  }
+  
+  /********************TABLA************************/
+  thead tr td{
+    font-weight: bold;
+    background-color: #F5F5F1;
+  }
+  .puesto{
+    font-weight: bold;
+  }
+  td{
+    text-align: center;
+  }
+  table{
+    margin-bottom: 50px;
+  }
+
+  .table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+
+  .table-hover tbody tr:hover td {
+    color: #212529;
+  }
+
+  .table-hover tbody tr:hover td:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  .table-hover tbody tr:hover td:nth-child(even) {
+    background-color: #e9ecef;
+  }
+
+  .table-hover tbody tr:hover .align-middle {
+    background-color: #dee2e6 !important;
+  }
+
+  .table-hover tbody tr:hover .align-middle:hover {
+    background-color: #ced4da !important;
+  }
+
+  .table-hover tbody tr:hover .align-middle:hover a {
+    color: #0056b3 !important;
+  }
+
+  .table-hover tbody tr:hover .align-middle:hover a:hover {
+    text-decoration: underline;
+  }
+
+  th {
+    background-color: #aec6cf !important;
+    color: #333333 !important;
+    text-align: center;
+  }

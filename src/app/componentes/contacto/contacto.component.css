@@ -1,0 +1,29 @@
+/************************AYUDA*************************/
+.ayuda{
+    margin: 0 10%;
+}
+h3{
+    margin-top: 30px;
+}
+
+/*******TIPOS CONTACTO******/
+.tipos_contacto{
+    
+    display: flex; /*Todos los elementos se ajustan a la caja con clase "tipos_contacto", se quedan en la misma línea un al lado de la otra*/
+    /*margin: 0 15%;*/
+    justify-content: space-around; /*Todos los elementos se ajustan a la caja con clase "tipos_contacto", distribuyendose equitativamente*/
+}
+.titulo_tipo_contacto img{
+    width: 20px;
+}
+.contacto{
+    padding-right: 30px;
+    justify-content: space-around;
+}
+/***********************FORMULARIO*********************/
+.formulario_contacto{
+    width: 100%;
+    margin: 2% 0%;
+    border: solid rgb(141, 141, 141) 1px;
+    padding: 20px;
+}

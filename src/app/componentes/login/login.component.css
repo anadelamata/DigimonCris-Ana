@@ -1,0 +1,56 @@
+
+body {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease forwards;
+    
+}
+
+
+.btn-primary {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-primary:hover {
+    background-color: #ffca28;
+    border-color: #ffca28;
+}
+
+.btn-floating {
+    font-size: 20px;
+}
+
+.btn-floating i {
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-floating i:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el aumento de tamaño al pasar el ratón sobre los campos de formulario */
+.form-control:hover {
+    transform: scale(1.3);
+}
