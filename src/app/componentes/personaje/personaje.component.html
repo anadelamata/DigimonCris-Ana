@@ -1,19 +1,21 @@
+<app-nav></app-nav>
+
 @if (personaje) {
-    <div class="row my-3 justify-content-center align-items-center">
-        <button class="btn-btn-info col-1" (click)="cambiarChar(personaje.id -1)">Anterior</button>
-        <div class="col-3 my-3 mx-3">
-            <div class="card">
-                <div class="card-header bg-primary">
-                    <h5><strong>{{personaje.id}}. </strong>{{personaje.name}}</h5>
-                </div>
-                <img class="card-img-top" src="{{personaje.image}}" alt="">
-                <div class="card-body">
-                    <p><strong>ID: </strong> {{personaje.id}}</p>
-                    <p><strong>Nombre: </strong>{{personaje.name}}</p>
-                </div>
-                
+    <div class="row justify-content-center align-items-center">
+        <button class="btn btn-info col-1" (click)="cambiarChar(personaje.id -1)">Anterior</button>
+        <div class="card">
+            <img src="{{personaje.images[0].href}}" alt="">
+            <div class="card__content">
+                <h5 class="card__title"><strong>{{personaje.id}}. </strong>{{personaje.name}}</h5>
+                <p class="card__description"><strong>ID: </strong> {{personaje.id}}</p>
+                <p class="card__description"><strong>Nombre: </strong>{{personaje.name}}</p>
+                <p class="card__description"><strong>Level: </strong>{{personaje.levels[0].level}}</p>
+                <p class="card__description"><strong>Type: </strong>{{personaje.types[0].type}}</p>
+                <p class="card__description"><strong>Skill: </strong>{{personaje.skills[0].skill}}</p>
             </div>
         </div>
-        <button class="btn-btn-info col-1" (click)="cambiarChar(personaje.id +1)">Siguiente</button>
+        <button class="btn btn-info col-1" (click)="cambiarChar(personaje.id +1)">Siguiente</button>
     </div>
+      
+    <app-footer></app-footer>
 }

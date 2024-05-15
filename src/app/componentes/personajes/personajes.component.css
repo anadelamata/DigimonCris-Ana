@@ -10,15 +10,18 @@
 
 .card{
 
-    outline: 4px solid rgba(236, 243, 235, 0.932); /* Borde iluminado */
-    background-color: rgb(214, 235, 235);
-    color: rgb(41, 144, 235);
-    font-size: large;
-    font-style: inherit;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5)
    
 
 
 }
+
+
+
+
 .btn-next {
     background-color: rgba(0, 0, 0, 0.781);
     color: rgb(235, 230, 230);
@@ -29,28 +32,6 @@
 }
 
 
-       /* Con esto hacemos que nuestra foto del fondo este fija y no se mueva y haga el efecto este chuli*/
-.container {
-       
-    
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
-        height: 120vh; /* Ajusta la altura del cuerpo para que ocupe toda la ventana del navegador */
-        margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
-        padding: 0; /* Elimina el relleno predeterminado del cuerpo */
-}
-
-    /* Estilos para el contenido */
-.content {
-        position: relative; 
-        z-index: 1; /* Asegura que el contenido esté encima del fondo */
-        padding: 100px; /* Añade un espacio de relleno alrededor del contenido */
-       
-}
-
-    /*Si no hago esto nose como hacer para que me cuadre la imagen de fondo con el contenedor */
- .my-3 {
-        margin-top: 0rem !important;
-        margin-bottom: 1rem !important;
+p, h5{
+    text-decoration: none !important;
 }

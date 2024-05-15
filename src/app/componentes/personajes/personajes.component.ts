@@ -1,11 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { DataService } from '../../services/data-service';
 import { DataDigimon } from '../../common/data-digimon';
+import { NavComponent } from '../../layout/nav/nav.component';
+import { FooterComponent } from '../../layout/footer/footer.component';
 
 @Component({
   selector: 'app-personajes',
   standalone: true,
-  imports: [],
+  imports: [NavComponent,FooterComponent],
   templateUrl: './personajes.component.html',
   styleUrl: './personajes.component.css'
 })
@@ -16,6 +18,7 @@ export class PersonajesComponent {
 
   constructor(){
     this.cargarRM();
+    
 }
 
 private cargarRM(){

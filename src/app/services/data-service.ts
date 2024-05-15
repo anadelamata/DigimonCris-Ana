@@ -3,6 +3,7 @@ import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { Content, DataDigimon } from "../common/data-digimon";
 import { PersonajeComponent } from "../componentes/personaje/personaje.component";
+import { PersonajeDigi } from "../common/personaje-digi";
 
 @Injectable({
     providedIn: 'root'
@@ -24,8 +25,8 @@ export class DataService {
     loadDigimon(): Observable<DataDigimon>{
       return this.http.get<DataDigimon>("https://digi-api.com/api/v1/digimon");
     }    
-    loadChar(id: string): Observable <Content>{
-      return this.http.get<Content>("https://digi-api.com/api/v1/digimon/" + id);
+    loadChar(id: string): Observable <PersonajeDigi>{
+      return this.http.get<PersonajeDigi>("https://digi-api.com/api/v1/digimon/" + id);
     }
     reloadPag(pag: string): Observable <DataDigimon>{
       return this.http.get<DataDigimon>(pag);

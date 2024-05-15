@@ -12,7 +12,7 @@ import { ProductosComponent } from './componentes/productos/productos.component'
 export const routes: Routes = [
     {
         path: "",
-        redirectTo: "register",
+        redirectTo: "Login",
         pathMatch: 'full'
       },//Primera ruta. Cada ruta va dentro de unas llaves.
       {
